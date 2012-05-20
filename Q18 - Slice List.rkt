@@ -7,7 +7,7 @@
 ;;
 ;;    Example:
 ;;    (slice '(a b c d e f g h i k) 3 7)
-;; => (C D E F G)
+;; => '(c d e f g)
 
 ;; Slices the given list.
 (define (slice lst i k)

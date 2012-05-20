@@ -7,7 +7,7 @@
 ;;
 ;;    Example:
 ;;    (encode-modified '(a a a a b c c a a d e e e e))
-;;  => ((4 A) B (2 C) (2 A) D (4 E))
+;;  => '((4 a) B (2 c) (2 a) d (4 e))
 
 (define (encode-modified lst)
   (foldr (lambda (x y) 

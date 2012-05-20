@@ -5,7 +5,7 @@
 ;;
 ;;   Example:
 ;;    (drop '(a b c d e f g h i k) 3)
-;; => (A B D E G H K)
+;; => '(a b d e g h k)
 
 ;; Drops every N-th element in the given list.
 (define (drop lst n)

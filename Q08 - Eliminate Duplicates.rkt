@@ -7,8 +7,9 @@
 ;;
 ;;    Example:
 ;;    (compress '(a a a a b c c a a d e e e e))
-;; => (A B C A D E)
+;; => '(a b c a d e)
 
+;; Compresses the list.
 (define (compress lst)
   (foldr (lambda (x y) (cond
                          [(empty? y) (list x)]

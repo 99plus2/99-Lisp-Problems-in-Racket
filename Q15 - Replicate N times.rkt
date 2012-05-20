@@ -1,5 +1,11 @@
 #lang racket
 
+;; Question:
+;;   Replicate the elements of a list a given number of times.
+;;    Example:
+;;     (repli '(a b c) 3)
+;;  => '(a a a b b b c c c)
+
 ;; Replicates every element in the given list N times.
 (define (repli lst n)
   (if (>= n 0) 

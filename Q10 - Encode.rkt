@@ -7,7 +7,7 @@
 ;;
 ;;    Example:
 ;;    (encode '(a a a a b c c a a d e e e e))
-;; => ((4 A) (1 B) (2 C) (2 A) (1 D)(4 E))
+;; => '((4 a) (1 b) (2 c) (2 a) (1 d)(4 e))
 
 (define (encode lst)
   (foldr (lambda (x y) (cons (list (length x) (first x)) y)) empty (pack lst)))

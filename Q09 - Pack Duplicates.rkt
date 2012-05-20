@@ -6,7 +6,7 @@
 ;;
 ;;    Example:
 ;;    (pack '(a a a a b c c a a d e e e e))
-;; => ((A A A A) (B) (C C) (A A) (D) (E E E E))
+;; => '((a a a a) (b) (c c) (a a) (d) (e e e e))
 
 ;; Packs consecutive duplicates of list elements into sublists.
 (define (pack lst)

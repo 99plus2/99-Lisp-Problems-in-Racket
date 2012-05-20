@@ -4,7 +4,7 @@
 ;; Remove the K'th element from a list.
 ;;   Example:
 ;;    (remove-at '(a b c d) 2)
-;; => (A C D)
+;; => '(a c d)
 
 ;; Removes the k-th element from the list.
 (define (remove-at lst k)
