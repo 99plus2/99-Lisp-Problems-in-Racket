@@ -1,7 +1,7 @@
-An attempt at the famous 99 Lisp Problems - in Scheme (Racket).
+An attempt at the famous 99 Lisp Problems - in Racket.
 
 A list of the 99 problems can be found here:
 http://www.ic.unicamp.br/~meidanis/courses/mc336/2006s2/funcional/L-99_Ninety-Nine_Lisp_Problems.html
 
-Scheme (Racket) can be downloaded here:
+Racket can be downloaded here:
 http://racket-lang.org/download/

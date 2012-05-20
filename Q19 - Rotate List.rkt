@@ -10,4 +10,12 @@
 ;; => (G H A B C D E F)
 
 ;; Rotates a given list N places to the left.
-;; (define (rotate lst n)
+(define (rotate lst n)
+  (define split-list (split lst n))
+  (append (second split-list) (first split-list)))
+
+
+;; Splits the given list in two sublists, where
+;; the length of the first sublist is N.
+(define (split lst n)
+  (list (take lst n) (drop lst n)))
