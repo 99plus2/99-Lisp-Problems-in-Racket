@@ -12,3 +12,5 @@
       [(equal? x y) (list x)]
       [else (cons x (range (func x) y))]))
   (create-list (if (<= x y) add1 sub1) x y))
+
+(provide range)

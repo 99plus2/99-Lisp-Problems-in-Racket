@@ -27,3 +27,5 @@
     [(<= n 0) empty]
     [(> n (length lst)) lst]
     [else (start lst n)]))
+
+(provide rnd-select)
