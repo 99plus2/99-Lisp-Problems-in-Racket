@@ -11,7 +11,7 @@
 ;;  => '((4 a) b (2 c) (2 a) d (4 e))
 
 ;; Run-length encodes the given list.
-(define (encode lst)
+(define (encode-direct lst)
   (update-first (foldr (lambda (x y) (cond
                                        [(empty? y) (cons (list x) y)]
                                        [(equal? x (first (first y))) (cons (cons x (first y)) (rest y))]
@@ -24,3 +24,5 @@
     [(empty? lst) empty]
     [(equal? (length (first lst)) 1) (cons (first (first lst)) (rest lst))]
     [else (cons (list (length (first lst)) (first (first lst))) (rest lst))]))
+
+(provide encode-direct)

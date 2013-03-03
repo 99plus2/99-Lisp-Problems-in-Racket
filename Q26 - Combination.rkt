@@ -17,3 +17,5 @@
       [(or (empty? lst) (> k (length lst))) (list lst)]
       [else (append (map (λ (x) (cons (first lst) x)) (combination-helper (sub1 k) (rest lst))) (combination-helper k (rest lst)))]))
   (filter (λ (x) (= (length x) k)) (combination-helper k lst)))
+
+(provide combination)

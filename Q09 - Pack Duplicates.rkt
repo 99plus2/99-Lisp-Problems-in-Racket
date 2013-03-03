@@ -13,3 +13,5 @@
   (foldr (lambda (x y) (cond
                          [(or (empty? y) (not (equal? x (first (first y))))) (cons (list x) y)]
                          [else (cons (cons x (first y)) (rest y))])) empty lst))
+
+(provide pack)

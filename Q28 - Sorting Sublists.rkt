@@ -43,4 +43,5 @@
                     (lfsort (filter (λ (x) (>= (lfrequency x lst) first-freq)) (rest lst))))]))
   
   (lfsort-helper lst))
-  
+
+(provide lsort lfsort)

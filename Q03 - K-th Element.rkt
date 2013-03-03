@@ -14,3 +14,5 @@
       [(equal? loc i) (first lst)]
       [else (element-at/helper (rest lst) (add1 i))]))
   (element-at/helper lst 1))
+
+(provide element-at)

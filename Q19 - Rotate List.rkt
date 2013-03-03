@@ -1,4 +1,5 @@
 #lang racket
+(require (file "Q17 - Split List.rkt"))
 
 ;; Question:
 ;; Rotate a list N places to the left.
@@ -14,8 +15,4 @@
   (define split-list (split lst n))
   (append (second split-list) (first split-list)))
 
-
-;; Splits the given list in two sublists, where
-;; the length of the first sublist is N.
-(define (split lst n)
-  (list (take lst n) (drop lst n)))
+(provide rotate)

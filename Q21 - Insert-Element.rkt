@@ -10,3 +10,5 @@
   (cond
     [(equal? k 1) (cons element lst)]
     [else (cons (first lst) (insert-at element (rest lst) (sub1 k)))]))
+
+(provide insert-at)

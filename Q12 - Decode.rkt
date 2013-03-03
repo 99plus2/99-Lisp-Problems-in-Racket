@@ -13,3 +13,5 @@
   (cond
    [(list? element) (build-list (first element) (lambda (x) (second element)))]
    [else (list element)]))
+
+(provide decode)

@@ -18,3 +18,5 @@
       [else (cons (first lst) (drop-helper (rest lst) (- n 1)))]))
   
   (drop-helper lst n))
+
+(provide drop)

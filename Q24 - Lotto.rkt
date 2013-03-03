@@ -12,3 +12,5 @@
 
 (define (lotto-select n m)
   (rnd-select (range 1 m) n))
+
+(provide lotto-select)

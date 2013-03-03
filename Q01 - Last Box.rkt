@@ -11,3 +11,5 @@
   (cond
     [(or (empty? lst) (empty? (rest lst))) lst]
     [else (my-last (rest lst))]))
+
+(provide my-last)

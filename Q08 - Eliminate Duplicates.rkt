@@ -15,3 +15,5 @@
                          [(empty? y) (list x)]
                          [(equal? x (first y)) y]
                          [else (cons x y)])) empty lst))
+
+(provide compress)

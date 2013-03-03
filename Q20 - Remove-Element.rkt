@@ -12,3 +12,5 @@
     [(or (< k 1) (> k (length lst))) lst] ;; Do nothing if index is outside range.
     [(equal? k 1) (rest lst)]
     [else (cons (first lst) (remove-at (rest lst) (sub1 k)))]))
+
+(provide remove-at)

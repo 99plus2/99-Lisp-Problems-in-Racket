@@ -10,3 +10,5 @@
 
 (define (rnd-permu lst)
   (rnd-select lst (length lst)))
+
+(provide rnd-permu)

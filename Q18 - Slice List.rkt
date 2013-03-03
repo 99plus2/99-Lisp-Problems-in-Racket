@@ -14,3 +14,5 @@
   (if (or (< k i) (<= i 0))
       (error `slice "Incorrect indices!")
       (take (drop lst (sub1 i)) (- k (sub1 i)))))
+
+(provide slice)
