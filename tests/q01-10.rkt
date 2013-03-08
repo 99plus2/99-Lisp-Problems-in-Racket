@@ -72,3 +72,4 @@
 (assert (equal? (encode '(() () ())) '((3 ()))))
 (assert (equal? (encode '(a 1 1 1 a 1 1)) '((1 a) (3 1) (1 a) (2 1))))
 (assert (equal? (encode '(a a a a b c c a a d e e e e)) '((4 a) (1 b) (2 c) (2 a) (1 d) (4 e))))
+
